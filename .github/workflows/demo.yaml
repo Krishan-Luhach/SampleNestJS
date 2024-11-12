@@ -1,0 +1,8 @@
+name: Github Action demo
+on: [push,workflow_dispatch]
+jobs:
+  Testing-the-workflow:
+    runs-on: macOS-latest
+    steps:
+      - run: echo "The job is triggered by ${{github.event_name}}"
+    
