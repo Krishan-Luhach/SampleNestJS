@@ -5,4 +5,10 @@ jobs:
     runs-on: macOS-latest
     steps:
       - run: echo "The job is triggered by ${{github.event_name}}"
+      # to lint the code
+      - run: npm run lint
+      # to format the code
+      - run: npm run format
+      # to test the code
+      - run: npm run test
     
