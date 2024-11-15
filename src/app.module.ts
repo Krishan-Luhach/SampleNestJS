@@ -5,12 +5,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppCIDetail } from './appCI-details/appCI-details.entity';
 import { AppCIModule } from './appCI-details/appCI-details.module';
 
-@Module({  
+@Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'mysql_db',
-      port: 3307,
+      host: 'localhost',
+      port: 3306,
       username: 'root',
       password: 'krishan123',
       database: 'appci_db',

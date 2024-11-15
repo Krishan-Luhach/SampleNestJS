@@ -1,22 +1,21 @@
-import { IsIn, Length } from "class-validator"
+import { IsIn, Length } from 'class-validator';
 
-export class CreateAppCIDTO{
-  serviceClassification: string
+export class CreateAppCIDTO {
+  serviceClassification: string;
 
-  @Length(3,3)
-  appciCode:string
-  
-  operationStatus: string
+  @Length(3, 3)
+  appciCode: string;
 
-  @IsIn(["On Premise","Hybrid","Public Cloud"])
+  operationStatus: string;
 
-  hostingType: string
+  @IsIn(['On Premise', 'Hybrid', 'Public Cloud'])
+  hostingType: string;
 
-  businessCriticality: string
+  businessCriticality: string;
 
-  ownedBy: string
+  ownedBy: string;
 
-  managedBy: string
+  managedBy: string;
 
-  cImaintainedBy:string
+  cImaintainedBy: string;
 }

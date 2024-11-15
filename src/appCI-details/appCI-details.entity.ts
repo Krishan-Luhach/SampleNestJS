@@ -6,8 +6,7 @@ export class AppCIDetail {
   id: number;
 
   @Column()
-
-  appciCode:string
+  appciCode: string;
   @Column()
   serviceClassification: string;
 
