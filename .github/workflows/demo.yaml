@@ -4,6 +4,8 @@ jobs:
   Testing-the-workflow:
     runs-on: macOS-latest
     steps:
+      - name: Checkout the repository code
+        uses: actions/checkout@v2
       - run: echo "The job is triggered by ${{github.event_name}}"
       # to lint the code
       - run: npm run lint
