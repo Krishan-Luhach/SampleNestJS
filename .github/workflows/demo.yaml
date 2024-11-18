@@ -24,4 +24,6 @@ jobs:
       # to test the code
       - name: Running the test cases
         run: npm run test
+      - name: Build the application
+        run: npm run build
     
