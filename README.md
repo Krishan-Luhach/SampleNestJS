@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # SampleNestJS
 =======
 <p align="center">
